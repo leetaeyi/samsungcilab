@@ -1,17 +1,17 @@
 @font-face {
 	font-family: SamsungOnebold;
-	src: url('"SamsungFonts_OneKorean,Sans/fonts_samsungsharpsans/SamsungSharpSans-Bold.ttf"') format('truetype');
+	src: url('SamsungSharpSans-Bold.ttf') format('truetype');
 }
 
 .home-btn {
     display: flex;
-    align-items: center; /* 로고와 높이 맞춤 */
+    align-items: center; 
     font-weight: bold;
     color: black !important;
     text-decoration: none;
-    margin-right: 20px; /* 로고들과의 간격 */
+    margin-right: 20px; 
     font-size: 16px;
-    opacity: 1 !important; /* 마우스 호버 효과에서 제외하려면 */
+    opacity: 1 !important; 
     font-family: samsungOneKoreanbold;
 }
 
@@ -19,30 +19,26 @@
 	font-family: samsungOnebold;
 }
 
-/* 마우스 올렸을 때 로고들만 흐려지게 (홈 버튼 유지) */
 .logo-nav:hover .home-btn {
-    opacity: 1; /* 홈 버튼은 항상 선명하게 유지 */
+    opacity: 1; 
 }
 
-/* 1. 네비게이션 컨테이너 */
 .logo-nav {
     display: flex;
     justify-content: center;
-    gap: 130px;          /* 로고 사이 간격 더 넓게 (40px -> 60px) */
+    gap: 130px;
     padding: 20px 0;
-    border-bottom: none; /* 중간 선 삭제 (border-bottom 제거) */
+    border-bottom: none; 
     font-family: SamsungOneKorean300;
 }
 
-/* 2. 로고 이미지 사이즈 조정 */
 .logo-nav a img {
-    height: 30px;       /* 이미지 크기 더 작게 (40px -> 30px) */
+    height: 30px;     
     display: block;
-    margin: 0 auto 8px; /* 아래 여백도 살짝 줄임 */
+    margin: 0 auto 8px;
     transition: transform 0.3s ease;
 }
 
-/* 3. 호버 효과 관련 */
 .logo-nav a {
     text-decoration: none;
     color: black;
@@ -52,29 +48,27 @@
 }
 
 .logo-nav:hover a {
-    opacity: 0.3;       /* 마우스 올리면 전체 흐리게 */
+    opacity: 0.3;      
 }
 
 .logo-nav:hover a:hover {
-    opacity: 1;         /* 마우스 올린 것만 선명하게 */
+    opacity: 1;        
     transform: scale(1.1);
 }
 
-/* 4. 연도 텍스트 스타일 */
 .logo-nav a p {
     margin: 0;
-    font-size: 12px;    /* 글씨도 조금 작게 조정 */
+    font-size: 12px;    
     font-weight: bold;
 }
 
 .product-wrapper:hover > div {
     opacity: 0.3;
-    transition: opacity 0.3s ease; /* 부드럽게 흐려지도록 */
+    transition: opacity 0.3s ease; 
 }
 
-/* 2. 마우스를 올린 특정 아이템만 다시 선명하게 + 크게 */
 .product-wrapper > div:hover {
-    opacity: 1 !important; /* 흐려진 상태를 무시하고 다시 선명하게 */
+    opacity: 1 !important; 
 }
 
 .noodle {
@@ -265,7 +259,7 @@
 
 @font-face {
 	font-family: SamsungOneKorean300;
-	src: url('SamsungFonts_OneKorean,Sans/SamsungOneKorean/SamsungOneKorean-300_v2.0_hinted_20200508.ttf') format('truetype');
+	src: url('SamsungOneKorean-300_v2.0_hinted_20200508.ttf') format('truetype');
 }
 
 .year1938 span {
@@ -278,7 +272,7 @@
 
 @font-face {
 	font-family: SamsungOneKoren700;
-	src: url('SamsungFonts_OneKorean,Sans/SamsungOneKorean/SamsungOneKorean-700_v2.0_hinted_20200508.ttf') format('truetype');
+	src: url('SamsungOneKorean-700_v2.0_hinted_20200508.ttf') format('truetype');
 }
 
 .title1938 span {
@@ -299,12 +293,12 @@
 
 @font-face {
 	font-family: SamsungOneKorean400c;
-	src:url('SamsungFonts_OneKorean,Sans/SamsungOneKorean/SamsungOneKorean-400C_v2.0_hinted_20200508.ttf') format('truetype');
+	src:url('SamsungOneKorean-400C_v2.0_hinted_20200508.ttf') format('truetype');
 }
 
 @font-face {
 	font-family: SamsungOneKorean700c;
-	src: url('SamsungFonts_OneKorean,Sans/SamsungOneKorean/SamsungOneKorean-700C_v2.0_hinted_20200508.ttf') format('truetype');
+	src: url('SamsungOneKorean-700C_v2.0_hinted_20200508.ttf') format('truetype');
 }
 
 .text1938 span {
