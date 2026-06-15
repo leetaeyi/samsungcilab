@@ -1,0 +1,1469 @@
+@font-face {
+	font-family: SamsungOnebold;
+	src: url('"SamsungFonts_OneKorean,Sans/fonts_samsungsharpsans/SamsungSharpSans-Bold.ttf"') format('truetype');
+}
+
+.home-btn {
+    display: flex;
+    align-items: center; /* 로고와 높이 맞춤 */
+    font-weight: bold;
+    color: black !important;
+    text-decoration: none;
+    margin-right: 20px; /* 로고들과의 간격 */
+    font-size: 16px;
+    opacity: 1 !important; /* 마우스 호버 효과에서 제외하려면 */
+    font-family: samsungOneKoreanbold;
+}
+
+.samsungcilab {
+	font-family: samsungOnebold;
+}
+
+/* 마우스 올렸을 때 로고들만 흐려지게 (홈 버튼 유지) */
+.logo-nav:hover .home-btn {
+    opacity: 1; /* 홈 버튼은 항상 선명하게 유지 */
+}
+
+/* 1. 네비게이션 컨테이너 */
+.logo-nav {
+    display: flex;
+    justify-content: center;
+    gap: 130px;          /* 로고 사이 간격 더 넓게 (40px -> 60px) */
+    padding: 20px 0;
+    border-bottom: none; /* 중간 선 삭제 (border-bottom 제거) */
+    font-family: SamsungOneKorean300;
+}
+
+/* 2. 로고 이미지 사이즈 조정 */
+.logo-nav a img {
+    height: 30px;       /* 이미지 크기 더 작게 (40px -> 30px) */
+    display: block;
+    margin: 0 auto 8px; /* 아래 여백도 살짝 줄임 */
+    transition: transform 0.3s ease;
+}
+
+/* 3. 호버 효과 관련 */
+.logo-nav a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    transition: opacity 0.3s ease;
+    opacity: 1;
+}
+
+.logo-nav:hover a {
+    opacity: 0.3;       /* 마우스 올리면 전체 흐리게 */
+}
+
+.logo-nav:hover a:hover {
+    opacity: 1;         /* 마우스 올린 것만 선명하게 */
+    transform: scale(1.1);
+}
+
+/* 4. 연도 텍스트 스타일 */
+.logo-nav a p {
+    margin: 0;
+    font-size: 12px;    /* 글씨도 조금 작게 조정 */
+    font-weight: bold;
+}
+
+.product-wrapper:hover > div {
+    opacity: 0.3;
+    transition: opacity 0.3s ease; /* 부드럽게 흐려지도록 */
+}
+
+/* 2. 마우스를 올린 특정 아이템만 다시 선명하게 + 크게 */
+.product-wrapper > div:hover {
+    opacity: 1 !important; /* 흐려진 상태를 무시하고 다시 선명하게 */
+}
+
+.noodle {
+	position: absolute;
+	width: 17%;
+	top: 37%;
+	left: 0;
+	transition: transform 0.3s ease;
+}
+
+/*.noodle:hover {
+	transform: scale(1.2);
+	cursor: pointer;
+}*/
+
+.thirtynoodle:hover img {
+	transform: scale(1.2);
+	transition: transform 0.3s ease;
+	cursor: pointer;
+}
+
+.blacktv {
+	position: absolute;
+	width: 26%;
+	top: 23%;
+	left: 13%;
+	transition: transform 0.3s ease;
+}
+
+/*.blacktv:hover {
+	transform: scale(1.2);
+	cursor: pointer;
+}*/
+
+.sixtyblacktv:hover img {
+	transform: scale(1.2);
+	transition: transform 0.3s ease;
+	cursor: pointer;
+}
+
+.colortv {
+	position: absolute;
+	width: 25%;
+	top: 35%;
+	left: 32%;
+	transition: transform 0.3s ease;
+}
+
+/*.colortv:hover {
+	transform: scale(1.2);
+	cursor: pointer;
+}*/
+
+.seventycolortv:hover img {
+	transform: scale(1.2);
+	transition: transform 0.3s ease;
+	cursor: pointer;
+}
+
+.microwave {
+	position: absolute;
+	width: 20%;
+	top: 38%;
+	left: 52%;
+	transition: transform 0.3s ease;
+}
+
+/*.microwave:hover {
+	transform: scale(1.2);
+	cursor: pointer;
+}*/
+
+.eightymicrowave:hover img {
+	transform: scale(1.2);
+	transition: transform 0.3s ease;
+	cursor: pointer;
+}
+
+.anycall {
+	position: absolute;
+	width: 20%;
+	top: 35%;
+	left: 69%;
+	transition: transform 0.3s ease;
+}
+
+.anycall:hover {
+	transform: scale(1.2);
+	cursor: pointer;
+}
+
+.ninetyanycall:hover img {
+	transform: scale(1.2);
+	transition: transform 0.3s ease;
+	cursor: pointer;
+}
+
+.blackphone {
+	position: absolute;
+	width: 15%;
+	top: 35%;
+	left: 84%;
+	transition: transform 0.3s ease;
+}
+
+.blackphone:hover {
+	transform: scale(1.2);
+	cursor: pointer;
+}
+
+.twentyblackphone:hover img {
+	transform: scale(1.2);
+	transition: transform 0.3s ease;
+	cursor: pointer;
+}
+
+
+.logo1938 {
+	position: absolute;
+	width: 5%;
+	top: 73%;
+	left: 7%;
+}
+
+.logo1969 {
+	position: absolute;
+	width: 7%;
+	top: 75%;
+	left: 23%;
+}
+
+.logo1979 {
+	position: absolute;
+	width: 7%;
+	top: 75%;
+	left: 42%;
+}
+
+.logo1980 {
+	position: absolute;
+	width: 7%;
+	top: 75%;
+	left: 58%;
+}
+
+.logo1993 {
+	position: absolute;
+	width: 7%;
+	top: 75%;
+	left: 74%;
+}
+
+.logo2005 {
+	position: absolute;
+	width: 7%;
+	top: 75%;
+	left: 87%;
+}
+
+.logo1938page {
+	position: absolute;
+	width: 35%;
+	top: 25vh;
+	left: 35%;
+	text-align: center;
+	animation: fadeDown 1.2s ease-out forwards;
+}
+
+@keyframes fadeDown {
+	0% {
+		opacity: 0;
+		transform: translate(-50px);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+
+.samsungstart {
+	position: absolute;
+	width: 35%;
+	top: 150vh;
+	left: 35%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+@font-face {
+	font-family: SamsungOneKorean300;
+	src: url('SamsungFonts_OneKorean,Sans/SamsungOneKorean/SamsungOneKorean-300_v2.0_hinted_20200508.ttf') format('truetype');
+}
+
+.year1938 span {
+	font-family: SamsungOneKorean300;
+	font-size: 71pt;
+	position: absolute;
+	top: 103vh;
+	left: 28vw;
+}
+
+@font-face {
+	font-family: SamsungOneKoren700;
+	src: url('SamsungFonts_OneKorean,Sans/SamsungOneKorean/SamsungOneKorean-700_v2.0_hinted_20200508.ttf') format('truetype');
+}
+
+.title1938 span {
+	font-family: SamsungOneKoren700;
+	font-size: 27pt;
+	position: absolute;
+	top: 106vh;
+	left: 40vw;
+}
+
+.title19382 span {
+	font-family: SamsungOneKoren700;
+	font-size: 27pt;
+	position: absolute;
+	top: 200vh;
+	left: 40vw;
+}
+
+@font-face {
+	font-family: SamsungOneKorean400c;
+	src:url('SamsungFonts_OneKorean,Sans/SamsungOneKorean/SamsungOneKorean-400C_v2.0_hinted_20200508.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: SamsungOneKorean700c;
+	src: url('SamsungFonts_OneKorean,Sans/SamsungOneKorean/SamsungOneKorean-700C_v2.0_hinted_20200508.ttf') format('truetype');
+}
+
+.text1938 span {
+	font-family: SamsungOneKorean400c;
+	font-size: 15.7pt;
+	position: absolute;
+	top: 113vh;
+	left: 40vw;
+	width: 29.5vw;
+	line-height: 1.8;
+	margin: 20px auto;
+}
+
+.text19382 span {
+	font-family: SamsungOneKorean400c;
+	font-size: 15.7pt;
+	position: absolute;
+	top: 205vh;
+	left: 40vw;
+	width: 29.5vw;
+	line-height: 1.8;
+	margin: 20px auto;
+}
+
+.logo1969page {
+	position: absolute;
+	width: 35%;
+	top: 45vh;
+	left: 35%;
+	text-align: center;
+	animation: fadeDown 1.2s ease-out forwards;
+}
+
+@keyframes fadeDown {
+	0% {
+		opacity: 0;
+		transform: translate(-50px);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+
+.samsungblacktv {
+	position: absolute;
+	width: 35%;
+	top: 160vh;
+	left: 35%;
+	text-align: center;
+}
+
+.year1969 span {
+	font-family: SamsungOneKorean300;
+	font-size: 71pt;
+	position: absolute;
+	top: 103vh;
+	left: 28vw;
+}
+
+.title1969 span {
+	font-family: SamsungOneKoren700;
+	font-size: 27pt;
+	position: absolute;
+	top: 106vh;
+	left: 40vw;
+}
+
+.title19692 span {
+	font-family: SamsungOneKoren700;
+	font-size: 27pt;
+	position: absolute;
+	top: 220vh;
+	left: 40vw;
+}
+
+.text1969 span {
+	font-family: SamsungOneKorean400c;
+	font-size: 15.7pt;
+	position: absolute;
+	top: 113vh;
+	left: 40vw;
+	width: 29.5vw;
+	line-height: 1.8;
+	margin: 20px auto;
+}
+
+.text19692 span {
+	font-family: SamsungOneKorean400c;
+	font-size: 15.7pt;
+	position: absolute;
+	top: 230vh;
+	left: 40vw;
+	width: 29.5vw;
+	line-height: 1.8;
+	margin: 20px auto;
+}
+
+.logo1979page {
+	position: absolute;
+	width: 35%;
+	top: 45vh;
+	left: 35%;
+	text-align: center;
+	animation: fadeDown 1.2s ease-out forwards;
+}
+
+@keyframes fadeDown {
+	0% {
+		opacity: 0;
+		transform: translate(-50px);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+
+.year1979 span {
+	font-family: SamsungOneKorean300;
+	font-size: 71pt;
+	position: absolute;
+	top: 103vh;
+	left: 28vw;
+}
+
+.title1979 span {
+	font-family: SamsungOneKoren700;
+	font-size: 27pt;
+	position: absolute;
+	top: 106vh;
+	left: 40vw;
+}
+
+.title19792 span {
+	font-family: SamsungOneKoren700;
+	font-size: 27pt;
+	position: absolute;
+	top: 150vh;
+	left: 40vw;
+}
+
+.text1979 span {
+	font-family: SamsungOneKorean400c;
+	font-size: 15.7pt;
+	position: absolute;
+	top: 113vh;
+	left: 40vw;
+	width: 29.5vw;
+	line-height: 1.8;
+	margin: 20px auto;
+}
+
+.text19792 span {
+	font-family: SamsungOneKorean400c;
+	font-size: 15.7pt;
+	position: absolute;
+	top: 158vh;
+	left: 40vw;
+	width: 29.5vw;
+	line-height: 1.8;
+	margin: 20px auto;
+}
+
+.logo1980page {
+	position: absolute;
+	width: 35%;
+	top: 45vh;
+	left: 35%;
+	text-align: center;
+	animation: fadeDown 1.2s ease-out forwards;
+}
+
+@keyframes fadeDown {
+	0% {
+		opacity: 0;
+		transform: translate(-50px);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+
+.year1980 span {
+	font-family: SamsungOneKorean300;
+	font-size: 71pt;
+	position: absolute;
+	top: 103vh;
+	left: 28vw;
+}
+
+.title1980 {
+	font-family: SamsungOneKoren700;
+	font-size: 27pt;
+	position: absolute;
+	top: 106vh;
+	left: 40vw;
+}
+
+.title19802 {
+	font-family: SamsungOneKoren700;
+	font-size: 27pt;
+	position: absolute;
+	top: 260vh;
+	left: 40vw;
+}
+
+.text1980 {
+	font-family: SamsungOneKorean400c;
+	font-size: 15.7pt;
+	position: absolute;
+	top: 113vh;
+	left: 40vw;
+	width: 29.5vw;
+	line-height: 1.8;
+	margin: 20px auto;
+}
+
+.text19802 {
+	font-family: SamsungOneKorean400c;
+	font-size: 15.7pt;
+	position: absolute;
+	top: 268vh;
+	left: 40vw;
+	width: 29.5vw;
+	line-height: 1.8;
+	margin: 20px auto;
+}
+
+.samsung80scikor {
+	position: absolute;
+	width: 35%;
+	top: 160vh;
+	left: 35%;
+	text-align: center;
+}
+
+.samsung80scieng {
+	position: absolute;
+	width: 35%;
+	top: 190vh;
+	left: 35%;
+	text-align: center;
+}
+
+.samsung80scichi {
+	position: absolute;
+	width: 35%;
+	top: 220vh;
+	left: 35%;
+	text-align: center;
+}
+
+.samsungmicrowave {
+	position: absolute;
+	width: 25%;
+	top: 300vh;
+	left: 7%;
+	text-align: center;
+}
+
+.title19803 {
+	position: absolute;
+	font-family: SamsungOneKorean700c;
+	font-size: 13.2pt;
+	position: absolute;
+	top: 335vh;
+	left: 7%;
+	line-height: 1.8;
+	margin: 20px auto;
+}
+
+.text19803 span {
+	position: absolute;
+	font-family: SamsungOneKorean400c;
+	font-size: 13.2pt;
+	position: absolute;
+	top: 340vh;
+	left: 7%;
+	line-height: 1.5;
+	margin: 20px auto;
+}
+
+.samsungwasher {
+	position: absolute;
+	width: 25%;
+	top: 300vh;
+	left: 36.5%;
+	text-align: center;
+}
+
+.title19804 {
+	position: absolute;
+	font-family: SamsungOneKorean700c;
+	font-size: 13.2pt;
+	position: absolute;
+	top: 335vh;
+	left: 36.5%;
+	line-height: 1.8;
+	margin: 20px auto;
+}
+
+.text19804 span {
+	position: absolute;
+	font-family: SamsungOneKorean400c;
+	font-size: 13.2pt;
+	position: absolute;
+	top: 340vh;
+	left: 36.5%;
+	line-height: 1.5;
+	margin: 20px auto;
+}
+
+.samsungaudio {
+	position: absolute;
+	width: 27%;
+	top: 300vh;
+	right: 7%;
+	text-align: center;	
+}
+
+.title19805 {
+	position: absolute;
+	font-family: SamsungOneKorean700c;
+	font-size: 13.2pt;
+	position: absolute;
+	top: 335vh;
+	left: 66%;
+	line-height: 1.8;
+	margin: 20px auto;
+}
+
+.text19805 span {
+	position: absolute;
+	font-family: SamsungOneKorean400c;
+	font-size: 13.2pt;
+	position: absolute;
+	top: 340vh;
+	left: 66%;
+	line-height: 1.5;
+	margin: 20px auto;
+}
+
+.samsungcolortv {
+	position: absolute;
+	width: 25%;
+	top: 353vh;
+	left: 7%;
+	text-align: center;
+}
+
+.title19806 {
+	position: absolute;
+	font-family: SamsungOneKorean700c;
+	font-size: 13.2pt;
+	position: absolute;
+	top: 385vh;
+	left: 7%;
+	line-height: 1.8;
+	margin: 20px auto;
+}
+
+.text19806 span {
+	position: absolute;
+	font-family: SamsungOneKorean400c;
+	font-size: 13.2pt;
+	position: absolute;
+	top: 390vh;
+	left: 7%;
+	line-height: 1.5;
+	margin: 20px auto;
+}
+
+.samsungcolortv2 {
+	position: absolute;
+	width: 25%;
+	top: 353vh;
+	left: 36.5%;
+	text-align: center;
+}
+
+.samsungphone {
+	position: absolute;
+	width: 10%;
+	top: 346vh;
+	left: 68%;
+	text-align: center;
+}
+
+.title19807 {
+	position: absolute;
+	font-family: SamsungOneKorean700c;
+	font-size: 13.2pt;
+	position: absolute;
+	top: 385vh;
+	right: 23%;
+	line-height: 1.8;
+	margin: 20px auto;
+}
+
+.text19807 span {
+	position: absolute;
+	font-family: SamsungOneKorean400c;
+	font-size: 13.2pt;
+	position: absolute;
+	top: 390vh;
+	left: 66%;
+	line-height: 1.5;
+	margin: 20px auto;
+}
+
+.logo1993page {
+	position: absolute;
+	width: 35%;
+	top: 45vh;
+	left: 35%;
+	text-align: center;
+	animation: fadeDown 1.2s ease-out forwards;
+}
+
+@keyframes fadeDown {
+	0% {
+		opacity: 0;
+		transform: translate(-50px);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+
+.year1993 span {
+	font-family: SamsungOneKorean300;
+	font-size: 71pt;
+	position: absolute;
+	top: 103vh;
+	left: 28vw;
+}
+
+.title1993 {
+	font-family: SamsungOneKoren700;
+	font-size: 27pt;
+	position: absolute;
+	top: 106vh;
+	left: 40vw;
+}
+
+.subtitle1993 {
+	font-family: SamsungOneKoren700;
+	font-size: 21pt;
+	position: absolute;
+	top: 117vh;
+	left: 40vw;
+	width: 29.5vw;
+	line-height: 1.8;
+	margin: 20px auto;
+}
+
+.subtitle19932{
+	font-family: SamsungOneKoren700;
+	font-size: 21pt;
+	position: absolute;
+	top: 217vh;
+	left: 40vw;
+	width: 29.5vw;
+	line-height: 1.8;
+	margin: 20px auto;
+}
+
+.text1993 {
+	font-family: SamsungOneKorean400c;
+	font-size: 15.7pt;
+	position: absolute;
+	top: 125vh;
+	left: 40vw;
+	width: 29.5vw;
+	line-height: 1.8;
+	margin: 20px auto;
+}
+
+.oval {
+	font-family: SamsungOneKorean700c
+}
+
+.text19932 {
+	font-family: SamsungOneKorean400c;
+	font-size: 15.7pt;
+	position: absolute;
+	top: 224vh;
+	left: 40vw;
+	width: 29.5vw;
+	line-height: 1.8;
+	margin: 20px auto;
+}
+
+.samsung1993ci1 {
+	position: absolute;
+	width: 25%;
+	top: 280vh;
+	left: 7%;
+	text-align: center;
+}
+
+.text19933 {
+	position: absolute;
+	font-family: SamsungOneKorean700c;
+	font-size: 13.2pt;
+	position: absolute;
+	top: 315vh;
+	left: 7%;
+	line-height: 1.8;
+	margin: 20px auto;
+}
+
+.samsung1993ci2 {
+	position: absolute;
+	width: 25%;
+	top: 280vh;
+	left: 36.5%;
+	text-align: center;
+}
+
+.text19934 {
+	position: absolute;
+	font-family: SamsungOneKorean700c;
+	font-size: 13.2pt;
+	position: absolute;
+	top: 315vh;
+	left: 36.5%;
+	line-height: 1.8;
+	margin: 20px auto;
+}
+
+.samsung1993ci3 {
+	position: absolute;
+	width: 25%;
+	top: 333vh;
+	left: 7%;
+	text-align: center;
+}
+
+.text19935 {
+	position: absolute;
+	font-family: SamsungOneKorean700c;
+	font-size: 13.2pt;
+	position: absolute;
+	top: 368vh;
+	left: 7%;
+	line-height: 1.8;
+	margin: 20px auto;
+}
+
+.samsung1993ci4 {
+	position: absolute;
+	width: 25%;
+	top: 333vh;
+	left: 36.5%;
+	text-align: center;
+}
+
+.text19936 {
+	position: absolute;
+	font-family: SamsungOneKorean700c;
+	font-size: 13.2pt;
+	position: absolute;
+	top: 368vh;
+	left: 36.5%;
+	line-height: 1.8;
+	margin: 20px auto;
+}
+
+.samsung1993ci5 {
+	position: absolute;
+	width: 15%;
+	top: 280vh;
+	left: 66%;
+	text-align: center;
+}
+
+.text19937 {
+	position: absolute;
+	font-family: SamsungOneKorean700c;
+	font-size: 13.2pt;
+	position: absolute;
+	top: 300vh;
+	left: 66%;
+	line-height: 1.8;
+	margin: 20px auto;
+}
+
+.samsung1993ci6 {
+	position: absolute;
+	width: 15%;
+	top: 313.5vh;
+	left: 66%;
+	text-align: center;
+}
+
+.text19938 {
+	position: absolute;
+	font-family: SamsungOneKorean700c;
+	font-size: 13.2pt;
+	position: absolute;
+	top: 333.5vh;
+	left: 66%;
+	line-height: 1.8;
+	margin: 20px auto;
+}
+
+.samsung1993ci7 {
+	position: absolute;
+	width: 15%;
+	top: 347vh;
+	left: 66%;
+	text-align: center;
+}
+
+.text19939 {
+	position: absolute;
+	font-family: SamsungOneKorean700c;
+	font-size: 13.2pt;
+	position: absolute;
+	top: 367vh;
+	left: 66%;
+	line-height: 1.8;
+	margin: 20px auto;
+}
+
+.samsunghukuda {
+	position: absolute;
+	width: 35%;
+	top: 400vh;
+	left: 35%;
+	text-align: center;
+}
+
+.title19932 {
+	font-family: SamsungOneKoren700;
+	font-size: 27pt;
+	position: absolute;
+	top: 460vh;
+	left: 40vw;
+}
+
+.subtitle19933 {
+	font-family: SamsungOneKoren700;
+	font-size: 21pt;
+	position: absolute;
+	top: 475vh;
+	left: 40vw;
+	width: 29.5vw;
+	line-height: 1.8;
+	margin: 20px auto;
+}
+
+.text199310 {
+	font-family: SamsungOneKorean400c;
+	font-size: 15.7pt;
+	position: absolute;
+	top: 483vh;
+	left: 40vw;
+	width: 29.5vw;
+	line-height: 1.8;
+	margin: 20px auto;
+}
+
+.samsunganycall {
+	position: absolute;
+	width: 35%;
+	top: 530vh;
+	left: 35%;
+	text-align: center;
+}
+
+.text199311 {
+	font-family: SamsungOneKoren700;
+	font-size: 13.2pt;
+	position: absolute;
+	top: 585vh;
+	left: 40vw;
+	width: 29.5vw;
+	line-height: 1.8;
+	margin: 20px auto;
+}
+
+.title19933 {
+	font-family: SamsungOneKoren700;
+	font-size: 21pt;
+	position: absolute;
+	top: 610vh;
+	left: 40vw;
+	width: 29.5vw;
+	line-height: 1.8;
+	margin: 20px auto;
+}
+
+.subtitle19934 {
+	font-family: SamsungOneKoren700;
+	font-size: 15.7pt;
+	position: absolute;
+	top: 620vh;
+	left: 40vw;
+	width: 29.5vw;
+	line-height: 1.8;
+	margin: 20px auto;
+}
+
+.text199312 {
+	font-family: SamsungOneKorean400c;
+	font-size: 15.7pt;
+	position: absolute;
+	top: 628vh;
+	left: 40vw;
+	width: 29.5vw;
+	line-height: 1.8;
+	margin: 20px auto;
+}
+
+.subtitle19935 {
+	font-family: SamsungOneKoren700;
+	font-size: 15.7pt;
+	position: absolute;
+	top: 638vh;
+	left: 40vw;
+	width: 29.5vw;
+	line-height: 1.8;
+	margin: 20px auto;
+}
+
+.text199313 {
+	font-family: SamsungOneKorean400c;
+	font-size: 15.7pt;
+	position: absolute;
+	top: 646vh;
+	left: 40vw;
+	width: 29.5vw;
+	line-height: 1.8;
+	margin: 20px auto;
+}
+
+.subtitle19936 {
+	font-family: SamsungOneKoren700;
+	font-size: 15.7pt;
+	position: absolute;
+	top: 656vh;
+	left: 40vw;
+	width: 29.5vw;
+	line-height: 1.8;
+	margin: 20px auto;
+}
+
+.text199314 {
+	font-family: SamsungOneKorean400c;
+	font-size: 15.7pt;
+	position: absolute;
+	top: 664vh;
+	left: 40vw;
+	width: 29.5vw;
+	line-height: 1.8;
+	margin: 20px auto;
+}
+
+.subtitle19937 {
+	font-family: SamsungOneKoren700;
+	font-size: 15.7pt;
+	position: absolute;
+	top: 679vh;
+	left: 40vw;
+	width: 29.5vw;
+	line-height: 1.8;
+	margin: 20px auto;
+}
+
+.text199315 {
+	font-family: SamsungOneKorean400c;
+	font-size: 15.7pt;
+	position: absolute;
+	top: 687vh;
+	left: 40vw;
+	width: 29.5vw;
+	line-height: 1.8;
+	margin: 20px auto;
+}
+
+.logo2005page {
+	position: absolute;
+	width: 35%;
+	top: 45vh;
+	left: 35%;
+	text-align: center;
+	animation: fadeDown 1.2s ease-out forwards;
+}
+
+@keyframes fadeDown {
+	0% {
+		opacity: 0;
+		transform: translate(-50px);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+
+.year2005 span {
+	font-family: SamsungOneKorean300;
+	font-size: 71pt;
+	position: absolute;
+	top: 103vh;
+	left: 28vw;
+}
+
+.title2005 {
+	font-family: SamsungOneKoren700;
+	font-size: 27pt;
+	position: absolute;
+	top: 106vh;
+	left: 40vw;
+}
+
+.text2005 {
+	font-family: SamsungOneKorean400c;
+	font-size: 15.7pt;
+	position: absolute;
+	top: 113vh;
+	left: 40vw;
+	width: 29.5vw;
+	line-height: 1.8;
+	margin: 20px auto;
+}
+
+.title20052 {
+	font-family: SamsungOneKoren700;
+	font-size: 27pt;
+	position: absolute;
+	top: 170vh;
+	left: 40vw;
+}
+
+.samsungwhite {
+	position: absolute;
+	width: 35%;
+	top: 180vh;
+	left: 35%;
+	text-align: center;
+}
+
+.samsungblack {
+	position: absolute;
+	width: 35%;
+	top: 210vh;
+	left: 35%;
+	text-align: center;
+}
+
+.samsungblue {
+	position: absolute;
+	width: 35%;
+	top: 240vh;
+	left: 35%;
+	text-align: center;
+}
+
+.year2010-2026 span {
+	font-family: SamsungOneKorean300;
+	font-size: 71pt;
+	position: absolute;
+	top: 279vh;
+	left: 28vw;
+	line-height: 1;
+}
+
+.title2010-2026 {
+	font-family: SamsungOneKoren700;
+	font-size: 27pt;
+	position: absolute;
+	top: 280vh;
+	left: 40vw;
+}
+
+.text20052 {
+	font-family: SamsungOneKorean400c;
+	font-size: 15.7pt;
+	position: absolute;
+	top: 292vh;
+	left: 40vw;
+	width: 29.5vw;
+	line-height: 1.8;
+	margin: 20px auto;
+}
+
+.subtitle2005 {
+	font-family: SamsungOneKoren700;
+	font-size: 15.7pt;
+	position: absolute;
+	top: 312vh;
+	left: 40vw;
+	width: 29.5vw;
+	line-height: 1.8;
+	margin: 20px auto
+}
+
+.text20053 {
+	font-family: SamsungOneKorean400c;
+	font-size: 15.7pt;
+	position: absolute;
+	top: 320vh;
+	left: 40vw;
+	width: 29.5vw;
+	line-height: 1.8;
+	margin: 20px auto;
+}
+
+.subtitle20052 {
+	font-family: SamsungOneKoren700;
+	font-size: 15.7pt;
+	position: absolute;
+	top: 360vh;
+	left: 40vw;
+	width: 29.5vw;
+	line-height: 1.8;
+	margin: 20px auto
+}
+
+.text20054 {
+	font-family: SamsungOneKorean400c;
+	font-size: 15.7pt;
+	position: absolute;
+	top: 368vh;
+	left: 40vw;
+	width: 29.5vw;
+	line-height: 1.8;
+	margin: 20px auto;
+}
+
+.subtitle20053 {
+	font-family: SamsungOneKoren700;
+	font-size: 15.7pt;
+	position: absolute;
+	top: 398vh;
+	left: 40vw;
+	width: 29.5vw;
+	line-height: 1.8;
+	margin: 20px auto
+}
+
+.text20055 {
+	font-family: SamsungOneKorean400c;
+	font-size: 15.7pt;
+	position: absolute;
+	top: 406vh;
+	left: 40vw;
+	width: 29.5vw;
+	line-height: 1.8;
+	margin: 20px auto;
+}
+
+.samsungs2 {
+	position: absolute;
+	width: 20%;
+	top: 450vh;
+	left: 20%;
+	text-align: center;
+}
+
+.text20056 {
+	position: absolute;
+	font-family: SamsungOneKorean700c;
+	font-size: 13.2pt;
+	top: 491vh;
+	left: 28.5%;
+	line-height: 1.8;
+	margin: 20px auto;
+}
+
+.samsungnote {
+	position: absolute;
+	width: 25%;
+	top: 450vh;
+	left: 38%;
+	text-align: center;
+}
+
+.text20057 {
+	position: absolute;
+	font-family: SamsungOneKorean700c;
+	font-size: 13.2pt;
+	top: 491vh;
+	left: 47%;
+	line-height: 1.8;
+	margin: 20px auto;
+}
+
+.samsungs8 {
+	position: absolute;
+	width: 18%;
+	top: 447vh;
+	right: 20%;
+	text-align: center;
+}
+
+.text20058 {
+	position: absolute;
+	font-family: SamsungOneKorean700c;
+	font-size: 13.2pt;
+	top: 491vh;
+	right: 26.5%;
+	line-height: 1.8;
+	margin: 20px auto;
+}
+
+.samsunglaptop {
+	position: absolute;
+	width: 22%;
+	top: 510vh;
+	left: 23%;
+	text-align: center;
+}
+
+.text20059 {
+	position: absolute;
+	font-family: SamsungOneKorean700c;
+	font-size: 13.2pt;
+	top: 535vh;
+	left: 28.5%;
+	line-height: 1.8;
+	margin: 20px auto;
+}
+
+.samsungairconditioner {
+	position: absolute;
+	width: 20%;
+	top: 500vh;
+	left: 41%;
+	text-align: center;
+}
+
+.text200510 {
+	position: absolute;
+	font-family: SamsungOneKorean700c;
+	font-size: 13.2pt;
+	top: 535vh;
+	left: 44.5%;
+	line-height: 1.8;
+	margin: 20px auto;
+}
+
+.samsungoled {
+	position: absolute;
+	width: 20%;
+	top: 503vh;
+	right: 20%;
+	text-align: center;
+}
+
+.text200511 {
+	position: absolute;
+	font-family: SamsungOneKorean700c;
+	font-size: 13.2pt;
+	top: 535vh;
+	right: 26%;
+	line-height: 1.8;
+	margin: 20px auto;
+}
+
+.samsungwasher2 {
+	position: absolute;
+	width: 18%;
+	top: 545vh;
+	left: 25%;
+	text-align: center;
+}
+
+.text200512 {
+	position: absolute;
+	font-family: SamsungOneKorean700c;
+	font-size: 13.2pt;
+	width: 22%;
+	top: 586vh;
+	left: 21%;
+	text-align: center;
+}
+
+.samsungzfold {
+	position: absolute;
+	width: 22%;
+	top: 551vh;
+	left: 42%;
+	text-align: center;
+}
+
+.text200513 {
+	position: absolute;
+	font-family: SamsungOneKorean700c;
+	font-size: 13.2pt;
+	top: 583.5vh;
+	left: 47%;
+	line-height: 1.8;
+	margin: 20px auto;
+}
+
+.samsungs26 {
+	position: absolute;
+	width: 18%;
+	top: 543vh;
+	right: 18%;
+	text-align: center;
+}
+
+.text200514 {
+	position: absolute;
+	font-family: SamsungOneKorean700c;
+	font-size: 13.2pt;
+	top: 583.5vh;
+	right: 26%;
+	line-height: 1.8;
+	margin: 20px auto;
+}
+
+.samsungbuds {
+	position: absolute;
+	width: 15%;
+	top: 595vh;
+	left: 30%;
+	text-align: center;
+}
+
+.text200515 {
+	position: absolute;
+	font-family: SamsungOneKorean700c;
+	font-size: 13.2pt;
+	top: 625vh;
+	left: 35.5%;
+	line-height: 1.8;
+	margin: 20px auto;
+}
+
+.samsungxr {
+	position: absolute;
+	width: 18%;
+	top: 600vh;
+	right: 30%;
+	text-align: center;
+	transition: transform 0.3s ease;
+}
+
+.text200516 {
+	position: absolute;
+	font-family: SamsungOneKorean700c;
+	font-size: 13.2pt;
+	top: 625vh;
+	left: 60%;
+	line-height: 1.8;
+	margin: 20px auto;
+}
+
+.xrsamsung :hover img {
+	transform: scale(1.2);
+	transition: transform 0.3s ease;
+	cursor: pointer;
+}
